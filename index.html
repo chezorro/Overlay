@@ -14,20 +14,19 @@
       overflow: hidden;
       background: transparent;
     }
-    .gradient-overlay {
+    .gradient-bar {
       width: 100%;
-      height: 100%;
-      /* Domyślnie: czerń od góry wygaszana do dołu */
+      height: 100px; /* Dokładna wysokość gradientu */
       background: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 1) 0%,
-        rgba(0, 0, 0, 0.6) 35%,
+        rgba(0, 0, 0, 0.5) 40%,
         rgba(0, 0, 0, 0) 100%
       );
     }
   </style>
 </head>
 <body>
-  <div class="gradient-overlay"></div>
+  <div class="gradient-bar"></div>
 </body>
 </html>
