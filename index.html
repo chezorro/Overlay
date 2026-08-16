@@ -19,14 +19,14 @@
     }
     .game-shadow-box {
       width: 100%;
-      /* Wymiary środkowego okna gry (dla 16:9 na szerokość 1080px to 607.5px) */
+      /* Dokładne proporcje okna 16:10 (np. 1920x1200, 1680x1050, 1280x800) */
       aspect-ratio: 16 / 10;
       background: transparent;
       
-      /* Cień rzucany symetrycznie w górę i w dół */
+      /* Cień rzucany nad grę i pod grę */
       box-shadow: 
-        0 -15px 30px rgba(0, 0, 0, 0.45), /* cień nad grą */
-        0  15px 30px rgba(0, 0, 0, 0.45);  /* cień pod grą */
+        0 -10px 25px rgba(0, 0, 0, 0.40), /* góra */
+        0  10px 25px rgba(0, 0, 0, 0.40);  /* dół */
     }
   </style>
 </head>
