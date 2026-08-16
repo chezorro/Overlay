@@ -11,24 +11,26 @@
     html, body {
       width: 100%;
       height: 100%;
-      overflow: hidden;
       background: transparent;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-    .gradient-bar {
-      width: 1080px;
-      height: 40px; /* Dokładna wysokość gradientu */
-background: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.35) 0%,
-        rgba(0, 0, 0, 0.22) 30%,
-        rgba(0, 0, 0, 0.10) 65%,
-        rgba(0, 0, 0, 0.02) 88%,
-        rgba(0, 0, 0, 0) 100%
-      );
+    .game-shadow-box {
+      width: 100%;
+      /* Wymiary środkowego okna gry (dla 16:9 na szerokość 1080px to 607.5px) */
+      aspect-ratio: 16 / 9;
+      background: transparent;
+      
+      /* Cień rzucany symetrycznie w górę i w dół */
+      box-shadow: 
+        0 -15px 30px rgba(0, 0, 0, 0.45), /* cień nad grą */
+        0  15px 30px rgba(0, 0, 0, 0.45);  /* cień pod grą */
     }
   </style>
 </head>
 <body>
-  <div class="gradient-bar"></div>
+  <div class="game-shadow-box"></div>
 </body>
 </html>
