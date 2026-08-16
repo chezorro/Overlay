@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: transparent;
+    }
+    .gradient-overlay {
+      width: 100%;
+      height: 100%;
+      /* Domyślnie: czerń od góry wygaszana do dołu */
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.6) 35%,
+        rgba(0, 0, 0, 0) 100%
+      );
+    }
+  </style>
+</head>
+<body>
+  <div class="gradient-overlay"></div>
+</body>
+</html>
